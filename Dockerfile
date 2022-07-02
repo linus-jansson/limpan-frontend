@@ -8,4 +8,6 @@ RUN npm run build
 
 RUN npm install -g serve
 
-EXPOSE 3000
+EXPOSE 8080
+
+RUN serve -s build
