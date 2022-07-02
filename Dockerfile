@@ -10,4 +10,4 @@ RUN npm install -g serve
 
 EXPOSE 8080
 
-RUN serve -s build
+CMD [ "serve", "-s", "build" ]
