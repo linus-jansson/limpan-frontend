@@ -10,7 +10,7 @@ class Footer extends Component {
     }
     
 	async componentDidMount() {
-        let response = await axios.get("http://127.0.0.1:8000/api/get_socials/")
+        let response = await axios.get(`${process.env.REACT_APP_PROTOCOL}://${process.env.REACT_APP_BACKEND_DOMAIN}/api/get_socials/`)
         this.setState({author: response.data.discord_username })
     }
 
