@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://limpan.dev:3000",
+  "proxy": "https://api.limpan.dev/",
   "homepage": "/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
