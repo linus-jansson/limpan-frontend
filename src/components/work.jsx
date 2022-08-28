@@ -10,7 +10,7 @@ class Work extends Component {
 
     async componentDidMount() {
 
-        let response = await fetch(`${process.env.REACT_APP_PROTOCOL}://${process.env.REACT_APP_BACKEND_DOMAIN}/api/get_work/`)
+        let response = await fetch(`/api/v1/get_projects/`)
         response = await response.json()
         this.setState({ projects: response })
         this.setState({ loading: false })
